@@ -1,82 +1,108 @@
-head, body 
-{
-    font-family: sans-serif, serif;
-    color: red;
-    background-color: green;
-}
-h1
-{
-    text-align: center;
-    margin-top: 25px;
-}
-p
-{
-    
-    margin-top: 25px;
-    margin-left: 340px;
+head,
+body {
+  font-family: sans-serif, serif;
+  color: rgb(253, 249, 249);
+  background-image: url(./images/background-website.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-a 
-{
-    color: red;
-}
-a:hover
-{
-    color: blue;
-}
-a:active
-{
-    color: red;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-ul li {
-  float: left;
-}
-ul li a {
-  display: block;
-  color: green;
+h1 {
   text-align: center;
-  padding: 30px 16px;
-  text-decoration: none;
+  margin-top: 75px;
 }
-ul li a:hover {
-  background-color: lightgreen;
+
+p {
+  text-align: left;
+  margin-top: 25px;
+  border: 1px solid white;
+  border-radius: 15px;
+  border-color: rgba(15, 24, 108, 0.519);
+  background-color: rgba(15, 24, 108, 0.519);
+  border-width: 10%;
+  border-style: wrap;
+  border-left: 10px;
+  border-right: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px;
 }
-ul li a.active {
-  background-color: #04AA6D;
+
+a {
+  color: white;
 }
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
 ul {
+  position: sticky;
+  overflow: hidden;
   list-style-type: none;
-  margin: 0;
+  border-radius: 15px;
   padding: 0;
   display: flex;
-  border: 1px solid darkgreen;
-  background-color: darkgreen;
-}
-ul li {
-  float: left;
-  border-right: 1px solid #bbbbbb;
-}
-ul li:last-child {
-  border-right: none;
-}
-ul {
+  border-radius: 15px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(15, 24, 108, 0.519);
+  background-color: rgba(15, 24, 108, 0.519);
   position: fixed;
   top: 0;
   width: 100%;
 }
-ul {
-  position: sticky;
-  top: 0;
+
+ul li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 117px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+ul li a:hover {
+  background-color: purple;
+}
+
+ul li a.active {
+  background-color: purple;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+.table {
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+
+td {
+  padding: 10px;
+  background-color: rgba(15, 24, 108, 0.519);
+  border-bottom: 1px solid white;
+}
+
+th {
+  padding: 10px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: rgba(15, 24, 108, 0.519);
 }

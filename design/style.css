@@ -109,3 +109,18 @@ th {
   border-bottom: 1px solid white;
   background-color: rgba(15, 24, 108, 0.519);
 }
+  .w3-light-grey {
+    background-color: white;
+    border-radius: 15px;
+    border-width: 10%;
+  }
+  .w3-container w3-green #myBar{
+    height:24px;width:1%" 
+  }
+  .w3-green {
+    background-color: green;
+    border-radius: 15px;
+  }
+  .w3-center {
+    text-align: center;
+  }

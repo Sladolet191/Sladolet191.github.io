@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../images/hzlogo.ico">
     <link rel="stylesheet" href="../design/style.css">
 </head>
 
@@ -30,7 +31,7 @@
                 <th>Course</th>
                 <th>EC</th>
                 <th>Exam</th>
-                <th style="border-radius: 0px 15px 0px 0px;">Grade</th>
+                <th class="grade" style="border-radius: 0px 15px 0px 0px;">Grade</th>
             </tr>
         </thead>
         <tbody>
@@ -113,6 +114,41 @@
             </tr>
         </tbody>
     </table>
+    <div class="w3-container">
+        <div class="w3-light-grey">
+            <div id="myBar" class="w3-container w3-green" style="height:24px;width:0%"></div>
+        </div>
+
+        <p id="label">0%</p>
+
+        <button class="w3-button" onclick="move()">Click Me</button>
+    </div>
+
+
+
+    <script>
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 0;
+            var id = setInterval(frame, 10);
+            var grade = 5.0;
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else if (width < (grade / 10) * 100) {
+                    width++;
+                    elem.style.width = width + '%';
+                    document.getElementById("label").innerHTML = width * 1 + '%';
+                }
+            }
+        }
+        if (grade >= 5.5) {
+            document.getElementById("myBar").style.backgroundColor = "green";
+        } 
+        else {
+            document.getElementById("myBar").style.backgroundColor = "red";
+        }
+    </script>
 </body>
 
 </html>
